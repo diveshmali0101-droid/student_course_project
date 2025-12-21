@@ -1,0 +1,11 @@
+<h2>My Courses</h2>
+
+<ul>
+  {% for e in enrollments %}
+    <li>{{ e.course.title }}</li>
+  {% empty %}
+    <li>No courses enrolled</li>
+  {% endfor %}
+</ul>
+
+<a href="/">Back</a>
